@@ -292,7 +292,7 @@ ul {
 /* Phần Hero */
 .hero-section {
   position: relative;
-  background-image: url("/assets/images/Big_Home.avif");
+  background-image: url("/assets/images/Big_Home.png");
   background-size: cover;
   background-position: center;
   height: 550px;
