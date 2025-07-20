@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/pages/4_SiDan/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <div id="header">
@@ -64,6 +65,124 @@
     <!-- Nội dung trang ở đây -->
     <main class="site-content">
       <div class="container">
+        <div class="top-bar">
+          <div class="container top-bar-container">
+            <!-- search bar-->
+            <div class="search-bar">
+              <input type="text" placeholder="Search keywords, part numbers, or VIN" />
+              <button type="sumit" aria-label="Search">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <!-- Navigation top right -->
+             <div class="parts-accessories">
+              <span>Parts & Accessories</span>
+              <i class="fa fa-chevron-down"></i>
+             </div>
+          </div>
+        </div>
+
+        <!-- Breadcrumb -->
+         <nav class="breadcrumb">
+          <div class="container">
+            <a href="#">Home</a> / <span>Maintenance</span>
+          </div>
+         </nav>
+
+         <!-- Tiêu đề trang -->
+         <section class="page-header">
+          <div class="container">
+            <h2>Maintenance</h2>
+          </div>
+         </section>
+          
+        <section class="maintenance-wrapper">
+  <div class="container maintenance-container">
+    <!-- Cột trái: Bộ lọc -->
+    <aside class="filter-sidebar">
+      <div class="filter-group">
+        <label for="popular">Popular</label>
+        <select id="popular">
+          <option>Popular</option>
+          <option>Top Rated</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="category">Category</label>
+        <select id="category">
+          <option>All</option>
+          <option>Fluids</option>
+          <option>Wipers</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="vin">VIN (optional)</label>
+        <input type="text" id="vin" placeholder="Enter VIN" />
+      </div>
+    </aside>
+
+    <!-- Cột phải: Sản phẩm -->
+    <main class="product-section">
+      <div class="sort-dropdown">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option>Position</option>
+          <option>Price</option>
+        </select>
+      </div>
+
+      <div class="product-list">
+        <!-- Một sản phẩm -->
+        <div class="product-item">
+          <img src="/pages/4_SiDan/images/wash-fluid.jpg" alt="Washer Fluid" />
+          <div class="product-info">
+            <h3>Toyota Windshield Washer Fluid Concentrate</h3>
+            <p class="price">MSRP $1.72 <span>00289-1W532</span></p>
+            <p class="note">Compatible with select vehicles. Please check your owner's manual.</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="/pages/4_SiDan/images/wash-fluid.jpg" alt="Washer Fluid" />
+          <div class="product-info">
+            <h3>Toyota Windshield Washer Fluid Concentrate</h3>
+            <p class="price">MSRP $1.72 <span>00289-1W532</span></p>
+            <p class="note">Compatible with select vehicles. Please check your owner's manual.</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="/pages/4_SiDan/images/wash-fluid.jpg" alt="Washer Fluid" />
+          <div class="product-info">
+            <h3>Toyota Windshield Washer Fluid Concentrate</h3>
+            <p class="price">MSRP $1.72 <span>00289-1W532</span></p>
+            <p class="note">Compatible with select vehicles. Please check your owner's manual.</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="/pages/4_SiDan/images/wash-fluid.jpg" alt="Washer Fluid" />
+          <div class="product-info">
+            <h3>Toyota Windshield Washer Fluid Concentrate</h3>
+            <p class="price">MSRP $1.72 <span>00289-1W532</span></p>
+            <p class="note">Compatible with select vehicles. Please check your owner's manual.</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="/pages/4_SiDan/images/wash-fluid.jpg" alt="Washer Fluid" />
+          <div class="product-info">
+            <h3>Toyota Windshield Washer Fluid Concentrate</h3>
+            <p class="price">MSRP $1.72 <span>00289-1W532</span></p>
+            <p class="note">Compatible with select vehicles. Please check your owner's manual.</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</section>
+
         <!-- Code trong này  -->
       </div>
     </main>
