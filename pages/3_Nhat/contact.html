@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>contact</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <div id="header">
@@ -60,11 +62,61 @@
         </div>
       </header>
     </div>
-
-    <!-- Nội dung trang ở đây -->
     <main class="site-content">
       <div class="container">
-        <!-- Code trong này  -->
+          <div class="section">
+    <h2>Contact a Dealer</h2>
+
+    <label>Select a Vehicle <span class="required">*Required</span></label>
+    <select>
+      <option>Vehicle</option>
+      <option>2025 TUNDRA I-FORCE MAX</option>
+      <option>2025 4RUNNER</option>
+      <option>2025 bZ4X</option>
+      <option>2025 CAMRY</option>
+    </select>
+
+    <select>
+      <option>Select a Trim</option>
+      <option>LIMITED I-FORCE MAX 3.4L TURBO V6 ENGINE REAR-WHEEL DRIVE 5.5-FT. CREWMAX</option>
+      <option>SR5 I-FORCE 2.4L 4-CYL. TURBO ENGINE REAR-WHEEL DRIVE</option>
+      <option>XLE ELECTRIC MOTOR FRONT-WHEEL DRIVE</option>
+      <option>LE 2.5L 4-CYL. ENGINE FRONT-WHEEL DRIVE</option>
+    </select>
+
+    <hr>
+
+    <div class="form-section">
+      <div class="left">
+        <label>Your Contact Information <span class="required">*Required</span></label>
+        <div class="name-fields">
+          <input type="text" placeholder="First name *">
+          <input type="text" placeholder="Last name *">
+        </div>
+        <input type="email" placeholder="Email *">
+        <input type="tel" placeholder="Phone *">
+        <div class="address-fields">
+          <input type="text" placeholder="Address">
+          <input type="text" placeholder="City">
+        </div>
+        <button class="btn-sm">Submit Request</button>
+      </div>
+
+        <div class="right">
+          <div class="dealer-select">
+            <div class="dealer-label">Select a Dealer</div>
+            <div class="dealer-line">
+              <span class="pencil-icon"><i class="fa-solid fa-pencil"></i></span>
+            </div>
+          </div>
+          <div class="dealer-name">
+            ● Kinderhook Toyota
+            <span class="view-more">View More Dealers</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
       </div>
     </main>
 

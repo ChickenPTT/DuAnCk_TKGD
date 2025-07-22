@@ -1,0 +1,176 @@
+/* -------- Tổng thể layout cho phần login -------- */
+.site-content .container {
+  max-width: 400px;
+  text-align: center;
+}
+
+/* -------- Tiêu đề -------- */
+
+form h2 {
+  margin: 20px 0;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* -------- Form cơ bản -------- */
+form {
+  display: inline-block;
+  text-align: left;
+  margin-top: 30px;
+  width: 500px;
+}
+
+/* -------- Input -------- */
+form input[type="text"],
+form input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+  display: block;
+}
+
+/* -------- Nhãn -------- */
+label {
+  margin-bottom: 5px;
+  font-size: 15px;
+  display: block;
+}
+
+/* -------- Dòng link Register & Forgot -------- */
+.link-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 6px 0 30px;
+}
+
+.link-row a {
+  text-decoration: none;
+  color: blue;
+}
+
+.link-row a:hover {
+  text-decoration: underline;
+}
+
+/* -------- Nút đăng nhập -------- */
+.login-btn {
+  background-color: #4cff88;
+  border: none;
+  color: black;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #3ae279;
+}
+
+/* -------- Nút tìm kiếm (Search trong forgot password) -------- */
+.search-button {
+  background-color: #66ff66;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-button:hover {
+  background-color: #55dd55;
+}
+
+/* -------- Phân cách "Or" -------- */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px -100px 10px 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+/* -------- Dòng chữ SSO -------- */
+.sso-text {
+  font-size: 14px;
+  margin: 16px 0 0 100px;
+  color: #333;
+}
+
+/* -------- Nút SSO -------- */
+.sso-button {
+  width: 100%;
+  padding: 10px;
+  margin: 30px 50px 0;
+  border: 1px solid #999;
+  border-radius: 30px;
+  font-size: 15px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.sso-button:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.01);
+}
+
+.sso-button i {
+  font-size: 20px;
+}
+
+/* -------- Đăng ký -------- */
+.register-button {
+  background-color: #66ff66;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+.register-button:hover {
+  background-color: #55dd55;
+}
+
+/* -------- Link phụ -------- */
+.login-link {
+  font-size: 20px;
+  margin: 5px 440px 20px 0;
+  text-align: center;
+}
+
+.login-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

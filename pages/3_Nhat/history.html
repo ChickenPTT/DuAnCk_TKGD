@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toyota History</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow: hidden;
+      opacity: 1;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #e00;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 999;
+      transition: background 0.3s;
+    }
+
+    .home-button:hover {
+      background: #ff4444;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle {
+      position: relative;
+      width: 80vmin;
+      height: 80vmin;
+      border-radius: 50%;
+      border: 2px dashed #666;
+    }
+
+    .milestone {
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    .milestone a {
+      color: #fff;
+      text-decoration: none;
+      background: #e00;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .milestone a:hover {
+      background: #ff4444;
+    }
+
+    .center-content {
+      position: absolute;
+      text-align: center;
+      width: 80vmin;
+      margin-top: 200px;
+    }
+
+    .center-content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .center-content p {
+      max-width: 400px;
+      margin: auto;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Button -->
+  <a href="#" class="home-button" id="homeBtn">← Home</a> 
+
+  <div class="container">
+    <div class="circle" id="circle">
+      <div class="center-content">
+        <h1>THE ORIGINS OF TOYOTA</h1>
+        <p>Discover the milestones that shaped Toyota into a global icon. From its founding in 1937 to innovations in the 21st century.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const milestones = [
+      { year: '1937', link: '1937.html' },
+      { year: '1957', link: '1957.html' },
+      { year: '1989', link: '1989.html' },
+      { year: '1997', link: '1997.html' },
+      { year: '2020', link: '2020.html' }
+    ];
+
+    const circle = document.getElementById('circle');
+    const rect = circle.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    const radius = rect.width / 2;
+
+    milestones.forEach((m, i) => {
+      const angle = (2 * Math.PI / milestones.length) * i - Math.PI / 2;
+      const x = centerX + radius * Math.cos(angle);
+      const y = centerY + radius * Math.sin(angle);
+
+      const div = document.createElement('div');
+      div.className = 'milestone';
+      div.style.left = `${x}px`;
+      div.style.top = `${y}px`;
+
+      const a = document.createElement('a');
+      a.href = m.link;
+      a.textContent = m.year;
+
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location.href = m.link;
+        }, 800);
+      });
+
+      div.appendChild(a);
+      document.body.appendChild(div);
+    });
+
+    // Fade out for home button
+    const homeBtn = document.getElementById('homeBtn');
+    homeBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 800);
+    });
+  </script>
+</body>
+</html>

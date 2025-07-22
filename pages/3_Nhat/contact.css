@@ -1,0 +1,113 @@
+h2 {
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.section {
+  max-width: 700px;
+  margin: auto;
+}
+
+.form-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.left, .right {
+  width: 48%;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.required {
+  color: red;
+  font-size: 12px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.name-fields input {
+  width: 100%;
+}
+
+.address-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.address-fields input {
+  width: 100%;
+}
+
+.btn-sm {
+  margin: 20px 0 20px 100px;
+  padding: 10px 20px;
+}
+
+.dealer-select {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 10px;
+}
+
+.dealer-label {
+  font-weight: bold;
+}
+
+.dealer-line {
+  flex: 1;
+  border-top: 2px solid red;
+  height: 0;
+  position: relative;
+  margin-bottom: -10px;
+}
+
+.pencil-icon {
+  position: absolute;
+  top: -25px;
+  right: -14px;
+  font-size: 14px;
+  color: red;
+}
+
+
+.dealer-name {
+  margin-top: 10px;
+}
+
+.view-more {
+  color: red;
+  margin-top: 5px;
+  display: block;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+hr {
+  margin: 40px 0;
+}
