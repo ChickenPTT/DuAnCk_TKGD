@@ -1,0 +1,156 @@
+.explore-vehicles {
+  padding: 60px 0 48px;
+  text-align: center;
+}
+.section-title {
+  font-size: 3rem;
+}
+.section-dic {
+  margin-top: -24px;
+}
+
+.container-filter {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-grid {
+  display: flex;
+  gap: 40px;
+}
+.filter {
+  flex: 0 0 280px;
+
+  padding: 24px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.filter h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.filter-group {
+  margin-bottom: 28px;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.filter-group div {
+  margin: 10px 0;
+}
+.section-vehicles {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.price-range {
+  font-size: 14px;
+  text-align: center;
+  color: #444;
+}
+
+.results {
+  flex: 1;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.vehicle-card {
+  background: white;
+  padding: 15px;
+
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+}
+.results span {
+  font-size: 24px;
+}
+.results select {
+  border: none;
+  background: #f5f5f5;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #767676;
+  border-radius: 0;
+  font-size: 14px;
+  height: 52px;
+  padding-left: 0;
+}
+
+.vehicle-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vehicle-card h4 {
+  padding: 4px 0;
+}
+h4.vehicles-year {
+  font-size: 12px;
+  font-weight: 500;
+}
+h4.vehicles-name {
+  font-size: 20px;
+  padding: 4px 0;
+}
+.line {
+  display: flex;
+}
+.vehicle-card p {
+  margin: 5px 0;
+}
+
+.vehicle-card span {
+  font-size: 14px;
+  color: #555;
+}
+.line1 {
+  padding-right: 40px;
+}
+.actions {
+  margin-top: 10px;
+}
+
+.actions a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #e60000;
+
+  font-weight: bold;
+}

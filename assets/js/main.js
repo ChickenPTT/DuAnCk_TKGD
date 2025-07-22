@@ -114,3 +114,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateSlide(currentIndex);
 });
+// Chức năng Trình chiếu sản phẩm
+
+const slides = document.querySelectorAll(".product-slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const currentPage = document.getElementById("current-page");
+const totalPages = document.getElementById("total-pages");
+
+let currentSlide = 0;
+totalPages.textContent = slides.length;
+
+function showSlide(index) {
+  slides.forEach((slide) => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+  currentPage.textContent = index + 1;
+}
+
+prevBtn.addEventListener("click", () => {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+});
+
+nextBtn.addEventListener("click", () => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+});
