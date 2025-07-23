@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./style_allVehicles.css" />
   </head>
   <body>
     <div id="header">
@@ -64,8 +65,28 @@
     <!-- Nội dung trang ở đây -->
     <main class="site-content">
       <div class="container">
-        <!-- Code trong này  -->
-         
+        <div class="top-bar">
+          <a href="./All_Vehicles.html" class="icon_back">
+            <span class="back-icon">&#8592;</span>
+          </a>
+
+          <span class="top-bar-name">2025 RAV24</span>
+          <nav class="top-bar-nav">
+            <a class="top-bar-link" href="./Vehicle Detail.html">Color</a>
+            <a class="top-bar-link" href="./Vehicle Detail.html">PowerTrain</a>
+            <a class="top-bar-link" href="./Vehicle Detail.html">Accessories</a>
+            <a class="top-bar-link" href="./Vehicle Detail-summary.html"
+              >Summary</a
+            >
+          </nav>
+        </div>
+        <div class="main-container">
+          <div class="fixed-car">
+            <img src="./images/avata2r.png" alt="Toyota Car" />
+          </div>
+
+          <div class="scrollable-options"></div>
+        </div>
       </div>
     </main>
 
@@ -139,5 +160,6 @@
     </div>
 
     <script src="/assets/js/main.js"></script>
+    <script src="./vehicles.js"></script>
   </body>
 </html>
