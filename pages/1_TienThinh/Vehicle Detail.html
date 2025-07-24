@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./style_allVehicles.css" />
   </head>
   <body>
     <div id="header">
@@ -12,7 +25,7 @@
         <div class="container header-container">
           <div class="header-left">
             <div class="logo">
-              <a href="#" title="Toyota Home">
+              <a href="/index.html" title="Toyota Home">
                 <svg viewBox="0 0 400 270" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M375.32 171.13c-1.8-19.26-7.85-37.12-17.5-52.69-13.4-21.6-33.3-38.35-57.53-48.24-25.08-10.2-52.73-12.75-79.62-7.59-26.13 5.02-50.15 17.4-69.2 35.61-19.1 18.2-32.9 41.7-39.6 68.39-4.32 16.9-5.18 34.3-2.6 51.26 2.06 13.5 6.6 26.5 13.3 38.4C69.6 270.8 88.3 283.6 109.8 290c10.4 3.1 21.1 4.7 31.9 4.7 13.1 0 26.1-2.1 38.5-6.2 24.2-7.9 45.6-22.3 61.6-41.6 17-20.5 27.5-45.6 29.8-72.6H200.7v-28.7h174.62zM200.7 101.4c-28.1 0-53.7 11.2-72.3 29.3-18.5 18-29.6 42.4-29.6 69.3h101.9v-98.6z"
@@ -27,12 +40,12 @@
               <nav class="main-nav">
                 <ul>
                   <li class="has-dropdown">
-                    <a href="#">Vehicles</a>
+                    <a href="./All_Vehicles.html">Vehicles</a>
                     <div class="dropdown-menu">
-                      <a href="#">All Vehicles</a>
-                      <a href="#">SUVs</a>
-                      <a href="#">Trucks</a>
-                      <a href="#">Cars</a>
+                      <a href="./All_Vehicles.html">All Vehicles</a>
+                      <a href="./All_Vehicles.html">SUVs</a>
+                      <a href="./All_Vehicles.html">Trucks</a>
+                      <a href="./All_Vehicles.html">Cars</a>
                     </div>
                   </li>
                   <li><a href="#">Shopping Tools</a></li>
@@ -64,11 +77,107 @@
     <!-- Nội dung trang ở đây -->
     <main class="site-content">
       <div class="container">
-        <!-- Code trong này  -->
+        <div class="top-bar">
+          <a href="./All_Vehicles.html" class="icon_back">
+            <span class="back-icon">&#8592;</span>
+          </a>
+
+          <span class="top-bar-name">2025 RAV24</span>
+          <nav class="top-bar-nav">
+            <a class="top-bar-link" href="#Color">Color</a>
+            <a class="top-bar-link" href="#Powertrain">PowerTrain</a>
+            <a class="top-bar-link" href="#Accessories">Accessories</a>
+            <a class="top-bar-link" href="./VehicleDetail_Summary.html"
+              >Summary</a
+            >
+          </nav>
+        </div>
+        <div class="main-container">
+          <div class="fixed-car">
+            <img src="./images/avata2r.png" alt="Toyota Car" />
+          </div>
+
+          <div class="scrollable-options">
+            <div class="color-section">
+              <h2 id="Color">Colors</h2>
+              <h3>EXTERIOR</h3>
+
+              <div class="color-option selected">
+                <span class="color-circle" style="background: #f2f2f2"></span>
+                <span class="color-name">Ice Cap</span>
+              </div>
+
+              <div class="color-option">
+                <span class="color-circle" style="background: #b3b3b3"></span>
+                <span class="color-name">Cutting Edge</span>
+              </div>
+
+              <div class="color-option">
+                <span class="color-circle" style="background: #333"></span>
+                <span class="color-name">Underground</span>
+              </div>
+
+              <div class="color-option">
+                <span class="color-circle" style="background: #000"></span>
+                <span class="color-name">Black</span>
+              </div>
+
+              <div class="color-option">
+                <span class="color-circle" style="background: #e60000"></span>
+                <span class="color-name">Supersonic Red *</span>
+              </div>
+
+              <div class="color-option">
+                <span class="color-circle" style="background: #5e9ecf"></span>
+                <span class="color-name">Heritage Blue</span>
+              </div>
+
+              <h3>INTERIOR</h3>
+
+              <div class="color-option selected">
+                <span class="color-circle" style="background: #1a1a1a"></span>
+                <span class="color-name">Black Fabric</span>
+              </div>
+            </div>
+
+            <section>
+              <h2 id="Powertrain">Powertrain</h2>
+              <p>ENGINE</p>
+              <button class="option">2.0L 4-Cyl. Engine</button>
+              <p>DRIVETRAIN</p>
+              <button class="option">Front-Wheel Drive</button>
+              <button class="option">All Front-Wheel Drive</button>
+            </section>
+
+            <section>
+              <h2 id="Accessories">Accessories</h2>
+              <details>
+                <summary class="Accessories-option">
+                  Towing and Recovery
+                </summary>
+              </details>
+              <details>
+                <summary class="Accessories-option">Light</summary>
+              </details>
+              <details>
+                <summary class="Accessories-option">Storage</summary>
+              </details>
+              <details>
+                <summary class="Accessories-option">Protection</summary>
+              </details>
+              <details>
+                <summary class="Accessories-option">Technology</summary>
+              </details>
+              <details>
+                <summary class="Accessories-option">Wheels</summary>
+              </details>
+            </section>
+          </div>
+        </div>
       </div>
     </main>
 
-    <div id="footer">
+    <!-- <div id="footer">
       <footer class="site-footer">
         <div class="container">
           <div class="footer-grid">
@@ -135,8 +244,9 @@
           </div>
         </div>
       </footer>
-    </div>
+    </div> -->
 
     <script src="/assets/js/main.js"></script>
+    <script src="./vehicles.js"></script>
   </body>
 </html>

@@ -292,7 +292,7 @@ ul {
 /* Phần Hero */
 .hero-section {
   position: relative;
-  background-image: url("/assets/images/Big_Home.png");
+  /* background-image: url("/assets/images/Big_Home.png"); */
   background-size: cover;
   background-position: center;
   height: 550px;
@@ -381,13 +381,14 @@ ul {
 
 /* Phần Khám phá xe */
 .explore-vehicles {
-  padding: 4rem 0;
+  padding: 60px 0 0;
   text-align: center;
 }
 
 .section-title {
   font-size: 2.8rem;
   font-weight: 700;
+  text-align: center;
   color: #000;
   margin-bottom: 3rem;
 }
@@ -426,4 +427,328 @@ ul {
   width: 100%;
   height: 2px;
   background-color: #000;
+}
+
+/* Explore */
+/* ==== Explore - Product Grid (Desktop) ==== */
+.product-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Slide wrapper */
+.product-slide {
+  display: none;
+  padding: 0 40px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.product-group.active {
+  display: grid;
+}
+
+/* ==== Product Card ==== */
+.product-group {
+  display: none;
+}
+.product-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+  color: #fff;
+}
+.product-info.brown {
+  background-color: #3b2e2a;
+}
+.product-info.green {
+  background-color: #2b5b59;
+}
+.product-info.dark-brown {
+  background-color: #302c2c;
+}
+.product-info.gray {
+  background-color: #a6afaf;
+}
+.product-info.teal {
+  background-color: #1c4a49;
+}
+.product-info.dark {
+  background-color: #1f1f1f;
+}
+
+.product-year {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.product-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+.product-desc {
+  font-size: 15px;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.product-buttons {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  flex: 1;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  background: white;
+  color: black;
+}
+.btn.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.btn.secondary i {
+  margin-left: 5px;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.page-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.page-info {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* link */
+.link-vehicles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.link-allVehicles {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  font-size: 14px;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+.link-searchInventory {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+.link-allVehicles .sign {
+  font-size: 12px;
+}
+
+/* shopping */
+.shopping-tools {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* .shopping-tools h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+} */
+
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.tool-box-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 1 1 180px;
+  max-width: 220px;
+}
+
+.tool-box {
+  width: 250px;
+  padding: 30px 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background-color: #fafafa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.tool-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tool-box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.tool-box p {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+/* poster */
+.poster {
+  position: relative;
+}
+.poster-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.poster-content {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.poster-title,
+.poster-desc {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.poster-title {
+  font-size: 24px;
+  font-weight: lighter;
+}
+.poster-desc {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+/* banner */
+
+.bz-banner {
+  background-color: #cce6f7;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.bz-text p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.bz-image {
+  width: 100%;
+  max-width: 970px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Phần Discover Toyota */
+section.discover-toyota {
+  padding: 60px 0 60px;
+  margin: 0 40px 0px;
+}
+img.service-img {
+  width: 640px;
+  height: 360px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.discover-box {
+  height: 360px;
+  width: 100%;
+  background-color: #3e3a3b;
+  border-radius: 10px;
+}
+.discover-content {
+  display: flex;
+  align-items: center;
+}
+.discover-img {
+}
+.service-content {
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 48px;
+}
+.service-content h3 {
+  margin-top: 5px;
+  font-size: 35px;
+  line-height: 1.5;
+}
+span.featured {
+  font-size: 12px;
+}
+.service-content p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+a.learn-btn {
+  padding: 12px 34px;
+  background-color: white;
+  color: black;
+  border-radius: 99999px;
 }
