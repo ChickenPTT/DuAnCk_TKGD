@@ -392,40 +392,35 @@ ul {
   margin-bottom: 3rem;
 }
 
-.vehicle-categories ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  border-bottom: 1px solid #e0e0e0;
-  max-width: 90%;
-}
-
-.vehicle-categories a {
-  text-decoration: none;
-  color: #555;
-  font-size: 1rem;
-  font-weight: 500;
-  display: block;
-  padding-bottom: 1rem;
+.vehicle-carousel-container {
   position: relative;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
 }
 
-.vehicle-categories a.active {
-  color: #000;
+.vehicle-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  scroll-behavior: smooth;
+  padding: 10px 20px;
+  max-width: 1200px;
 }
 
-.vehicle-categories a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -1px; /* Nằm đè lên đường viền của ul */
-  left: 0;
+.vehicle-card {
+  flex: 0 0 auto;
+  width: 220px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.vehicle-card img {
   width: 100%;
-  height: 2px;
-  background-color: #000;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Top bar container (search + parts menu) */
@@ -460,8 +455,8 @@ ul {
 }
 
 .search-bar button {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
   background: #e60000;
   border: none;
   padding: 8px 12px;
@@ -514,7 +509,6 @@ ul {
   font-weight: bold;
   margin: 0;
 }
-
 
 /* phan danh muc xe */
 .maintenance-container {
@@ -626,7 +620,7 @@ ul {
 }
 
 .news-image img {
-    margin-left: 50px;
+  margin-left: 50px;
   width: 400px;
   height: auto;
   object-fit: contain;
@@ -688,4 +682,446 @@ ul {
   margin-bottom: 20px;
   margin-top: 10px;
   margin-left: 60px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Code trong này  */
+.special-offers {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.category-tabs,
+.featured-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.category-tabs button,
+.featured-tabs button {
+  background: none;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.category-tabs button.active,
+.featured-tabs button.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+.carousel-wrapper {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px;
+  background: #fff;
+  text-align: left;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.carousel-nav button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.featured-vehicle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.featured-vehicle .image img {
+  width: 300px;
+}
+
+.featured-vehicle .info {
+  text-align: left;
+}
+
+.offer-card {
+  flex: 0 0 auto;
+  width: 220px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: left;
+  background: white;
+}
+
+.offer-card h4 {
+  margin: 10px 0 5px;
+}
+
+.offer-card button {
+  margin-top: 10px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.image-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  color: white;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
+  transition: transform 0.3s;
+}
+
+.image-card:hover img {
+  transform: scale(1.03);
+}
+
+.image-card .content {
+  position: absolute;
+  inset: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* đẩy nội dung xuống đáy */
+  align-items: center;
+  z-index: 1;
+  text-align: center;
+  gap: 10px;
+  padding-bottom: 24px;
+}
+
+.image-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.image-card p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.image-card button {
+  padding: 10px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 9999px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.image-card button:hover {
+  background-color: #eee;
+}
+
+.image-card.full {
+  height: 280px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-card.half {
+  height: 280px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .image-card.half {
+    width: 50%;
+  }
+}
+
+@media screen {
+  .offer-card {
+    flex: 0 0 calc(20% - 16px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.offer-section {
+  max-width: 1280px;
+  margin: auto;
+  text-align: center;
+}
+
+.offer-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding-bottom: 6px;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: #000;
+}
+
+.tab.active {
+  color: #000;
+  font-weight: bold;
+  border-color: #000;
+}
+
+.offer-list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.offer-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.type {
+  color: #4a00e0;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.car-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  width: calc(20% - 20px); /* 5 sản phẩm 1 hàng */
+  max-width: 220px; /* tránh to quá */
+  min-width: 180px; /* giữ size ổn định khi responsive */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: calc(33.33% - 20px); /* 3 sản phẩm khi nhỏ hơn desktop */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* 2 sản phẩm trên tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* 1 sản phẩm trên mobile */
+  }
+}
+
+.desc {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.car-img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.price-info div span {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.view-btn {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.view-btn:hover {
+  background: #333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-btn {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.page-btn:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+.view-offer-btn {
+  background-color: #000; /* nền đen */
+  color: #fff; /* chữ trắng */
+  border: none;
+  border-radius: 9999px; /* tạo dạng viên thuốc */
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.view-offer-btn:hover {
+  background-color: #c80012; /* màu khi hover */
 }
