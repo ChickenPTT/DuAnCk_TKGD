@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>register</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div id="header">
@@ -64,7 +65,29 @@
     <!-- Nội dung trang ở đây -->
     <main class="site-content">
       <div class="container">
-        <!-- Code trong này  -->
+          <form>
+            <h2>Set up account</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="confirm">confirm password</label>
+            <input type="password" id="confirm" name="confirm">
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+
+            <div class="login-link">
+              <a href="login.html">Log in</a>
+            </div>
+
+            <button type="submit" class="register-button">Register</button>
+          </form>
       </div>
     </main>
 
