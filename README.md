@@ -12,3 +12,5 @@ cd DuAnCk_CNPM
 3. Nhánh của từng thành viên
    Lệnh này để chuyển sang của mình
    git checkout feature/<ten nhanh>
+
+Lỗi chưa fix: Ảnh hiển thị ở home page
