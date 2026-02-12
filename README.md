@@ -14,3 +14,4 @@ cd DuAnCk_CNPM
    git checkout feature/<ten nhanh>
 
 Lỗi chưa fix: Ảnh hiển thị ở home page
+Link figma: https://www.figma.com/design/g91yH9rHlUBwXL96RGklAS/Figma_DuAnCK?node-id=2-4&t=zQrpj7TzvvYBOZQA-1
